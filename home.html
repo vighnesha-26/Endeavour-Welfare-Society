@@ -1,0 +1,79 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Ngo Endeavour Welfare Society</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+	<div class="main">
+			<div class="logo">
+      			<img src="l1.jpg" id="logoimg" height="70px" width="120px">
+  			</div>
+		<div class="topnav">
+	   	    	<a href="about.html">About</a>
+        <a href="login.html">Login</a>
+ 			<a href="Home.html">Home</a>
+    	</div>
+
+	</div>
+
+	<div class="slideshow-container">
+<div class="name">
+
+</div>
+
+<div class="mySlides fade">
+  <img class="slide_img" src="d6.jpg" style="width: 100%">
+  
+
+</div>
+
+<div class="mySlides fade">
+  <img class="slide_img" src="d7.jpg" style="width: 100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img class="slide_img" src="d9.jpg" style="width: 100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="name">
+<p>
+“Every good act is charity. A man's true wealth hereafter is the good that he does in this world to his fellows.”</p>
+</div>
+	</header>
+</body>
+</html>	
